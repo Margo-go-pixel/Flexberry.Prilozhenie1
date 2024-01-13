@@ -1,0 +1,141 @@
+﻿{
+  "name": "IISPrilozhenie_1ГрафикРаботы",
+  "modelName": "i-i-s-prilozhenie-1-график-работы",
+  "className": "ГрафикРаботы",
+  "nameSpace": "IIS.Prilozhenie_1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаСоздания",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-prilozhenie-1-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "график",
+      "relatedTo": "i-i-s-prilozhenie-1-график",
+      "inverse": "графикРаботы"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ГрафикРаботыE",
+      "modelName": "i-i-s-prilozhenie-1-график-работы",
+      "attrs": [
+        {
+          "name": "датаСоздания",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Создал",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-prilozhenie-1-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ГрафикE",
+          "caption": "График",
+          "name": "график",
+          "relatedTo": "i-i-s-prilozhenie-1-график",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ГрафикРаботыL",
+      "modelName": "i-i-s-prilozhenie-1-график-работы",
+      "attrs": [
+        {
+          "name": "датаСоздания",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Создал",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Создал",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-prilozhenie-1-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

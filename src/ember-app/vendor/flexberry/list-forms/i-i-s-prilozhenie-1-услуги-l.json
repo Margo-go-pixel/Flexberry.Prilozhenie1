@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-1-услуги-e",
+  "editForm": "i-i-s-prilozhenie-1-услуги-e",
+  "external": false,
+  "caption": "Услуги",
+  "name": "IISPrilozhenie_1УслугиL",
+  "className": "УслугиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-1-услуги",
+      "modelProjection": "УслугиL"
+    }
+  ]
+}

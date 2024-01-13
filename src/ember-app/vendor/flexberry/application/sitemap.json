@@ -1,0 +1,66 @@
+﻿{
+  "applicationCaption": "Prilozhenie_1",
+  "applicationTitle": "Prilozhenie_1",
+  "items": [
+    {
+      "link": null,
+      "menuName": "сотрудники",
+      "caption": "Сотрудники",
+      "title": "Сотрудники",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-1-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-1-график-работы-l",
+          "menuName": null,
+          "caption": "График работы",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "клиенты",
+      "caption": "Клиенты",
+      "title": "Клиенты",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-1-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-1-запись-клиентов-l",
+          "menuName": null,
+          "caption": "Запись клиентов",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "услуги",
+      "caption": "Услуги",
+      "title": "Услуги",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-1-услуги-l",
+          "menuName": null,
+          "caption": "Услуги",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

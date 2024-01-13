@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-1-график-работы-e",
+  "editForm": "i-i-s-prilozhenie-1-график-работы-e",
+  "external": false,
+  "caption": "График работы",
+  "name": "IISPrilozhenie_1ГрафикРаботыL",
+  "className": "ГрафикРаботыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-1-график-работы",
+      "modelProjection": "ГрафикРаботыL"
+    }
+  ]
+}

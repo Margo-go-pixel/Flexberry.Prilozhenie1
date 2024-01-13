@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Prilozhenie_1",
+  "className": "ВидЗанятости",
+  "enumObjects": {
+    "Занято": "",
+    "Свободно": ""
+  }
+}
